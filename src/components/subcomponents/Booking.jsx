@@ -33,7 +33,7 @@ function Booking() {
         const dataToSubmit = { ...formData, bookingCode };
     
         try {
-            const response = await fetch("http://localhost:5000/booking", {
+            const response = await fetch("https://r-backend.vercel.app/booking", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

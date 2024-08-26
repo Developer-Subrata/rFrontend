@@ -62,7 +62,7 @@ export default function Contact() {
     web3FormData.append('message', formData.message);
 
     try {
-      const web3Response = await fetch('https://api.web3forms.com/submit', {
+      const web3Response = await fetch('https://r-backend.vercel.app/submit', {
         method: 'POST',
         body: web3FormData,
       });
