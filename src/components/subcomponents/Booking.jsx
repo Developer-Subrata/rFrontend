@@ -33,7 +33,7 @@ function Booking() {
         const dataToSubmit = { ...formData, bookingCode };
     
         try {
-            const response = await fetch("https://rbackend-p7dy.onrender.com/booking", {
+            const response = await fetch("http://localhost:5000/booking", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
